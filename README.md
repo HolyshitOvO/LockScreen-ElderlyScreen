@@ -1,5 +1,13 @@
 # Easy Call
 
+## 使用新gradle
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.5-bin.zip
+
+classpath 'com.android.tools.build:gradle:7.4.2'
+
+编译成功，打开成功，点击设置闪退
+
+---
 
 初衷是给家人做的一款老人锁屏APP，他们不会使用智能手机，不会解锁，不会滑屏，经常打错电话。
 
