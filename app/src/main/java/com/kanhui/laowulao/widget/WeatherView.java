@@ -142,7 +142,12 @@ public class WeatherView extends LinearLayout {
             setWeatherPic(weatherPic);
         }
         //初始化定位
-        mLocationClient = new AMapLocationClient(context.getApplicationContext());
+        try {
+            mLocationClient = new AMapLocationClient(context.getApplicationContext());
+        }
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         //设置定位回调监听
         mLocationClient.setLocationListener(mLocationListener);
 
